@@ -1,9 +1,10 @@
 
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
+import './App.css';
+import Display from './data/index';
 
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
-import './App.css';
 
 function App() {
 
@@ -20,6 +21,9 @@ function App() {
     <div className="App">
     <div>filter here</div>
     <div>database here</div>
+    <div>
+      <Display data={data}/>
+    </div>
     </div>
   );
 }

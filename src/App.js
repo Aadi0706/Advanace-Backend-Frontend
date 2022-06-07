@@ -20,8 +20,10 @@ function App() {
   return (
     <div className="App">
     <div>filter here</div>
-    <div>database here</div>
     <div>
+      
+    </div>
+    <div id="display_data">
       <Display data={data}/>
     </div>
     </div>
